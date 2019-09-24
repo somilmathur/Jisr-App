@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.somil.signralnoorfinal.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:scaleType="center"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/bg"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:paddingTop="140dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        app:srcCompat="@drawable/welcome"
+        android:id="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:paddingTop="200dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        app:srcCompat="@drawable/choose"
+        android:id="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/sign2text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/try1"
+        android:elevation="0dp" />
+
+
+    <Button
+        android:id="@+id/text2sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/tr2"
+        android:elevation="0dp" />
+
+</RelativeLayout>

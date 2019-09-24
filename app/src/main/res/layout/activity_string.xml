@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.somil.signralnoorfinal.string">
+
+
+    <ImageView
+        android:id="@+id/bgwhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        app:srcCompat="@drawable/bgwhite" />
+
+    <ImageView
+        android:id="@+id/centercard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upload"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/gesturecard" />
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:scaleType="center"
+        app:srcCompat="@drawable/appbar" />
+
+
+    <ImageView
+        android:id="@+id/what"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="false"
+        android:paddingTop="30dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        app:srcCompat="@drawable/what" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/upload"
+        android:elevation="0dp"
+        android:text="UPLOAD YOUR OWN GESTURE"
+        android:textColor="@color/themecolor"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/centercard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/buttonbg"
+        android:elevation="0dp"
+        android:text="SEARCH"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/search_edit"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/what"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/card"
+        android:hint="Enter Here"
+        android:imeOptions="actionDone"
+        android:inputType="text|textCapSentences|textAutoCorrect|textLongMessage"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:textColor="@color/themecolor"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/off_white"
+        android:textCursorDrawable="@color/white"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/From"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/upload"
+        android:layout_alignTop="@+id/double_arrow"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="17dp"
+        android:entries="@array/From" />
+
+    <Spinner
+        android:id="@+id/To"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:entries="@array/To"
+        android:paddingRight="20dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/bg"
+        android:layout_toEndOf="@+id/or" />
+
+    <ImageView
+        android:id="@+id/double_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/To"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/From"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="30dp"
+        app:srcCompat="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upload"
+        android:layout_alignStart="@+id/double_arrow"
+        android:layout_marginBottom="36dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/or" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/what"
+        android:background="@drawable/baccc"
+        android:elevation="23dp" />
+
+    <ImageView
+        android:id="@+id/mic"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_edit"
+        android:layout_alignEnd="@+id/To"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="5dp"
+        app:srcCompat="@drawable/mic" />
+
+
+</RelativeLayout>

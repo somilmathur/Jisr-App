@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SignrAlNoorFinal</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="lang_prompt">From</string>
+
+    <string-array name="From">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+
+    <string name="lang_prompt2">From</string>
+
+    <string-array name="To">
+        <item>British Sign Language (BSL)</item>
+        <item>Emirati Sign Language (ArSL)</item>
+        <item>American Sign Language (ASL)</item>
+    </string-array>
+    <string name="title_activity_tabbed">tabbed</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+</resources>
